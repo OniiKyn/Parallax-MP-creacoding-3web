@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-nav{
+nav {
   width: 100%;
   background-color: orangered;
   height: 80px;
@@ -63,25 +63,27 @@ header {
 }
 */
 
-.titre{
+.titre {
   width: 100%;
   border-radius: 10px;
-  display: grid;   
-
+  display: grid;
 }
 
-.cartouche{
+.cartouche {
   background-color: brown;
-  width: 500px;
-  padding: 10px 0 10px 0;
+  font-size: 20px;
+  width: auto;
+  padding: 10px 20px 10px 20px;
   border-radius: 10px;
   justify-self: center;
   margin-bottom: 140px;
 }
+.TitreCartouche{
+  margin: 30px;
+}
 
 .titre h2 {
   text-align: center;
- 
 }
 /* .recette{
   border: solid 4px slateblue;
@@ -98,150 +100,154 @@ header {
   margin: 4rem;
 }
 
-
-  
-  .image { 
-    grid-area: 1 / 1 / 4 / 3; 
-   
-  }
-  img {
-    height: 250px;
-    width: auto;
-    padding-top: 20px;
-    margin-left: -50px;
-  }
-
-  #img2 {
-    height: 300px;
-    width: auto;
-    padding-top: 0px;
-    margin-left: -50px;
-    margin-bottom: 50px;
-  }
-  #img3 {
-    height: 350px;
-    width: auto;
-    padding-top: 0px;
-    margin-left: -50px;
-    margin-top :-15px;
-
-      
-  
-  }
-  .titre { grid-area: 1 / 3 / 2 / 7; }
-  .description { grid-area: 2 / 3 / 3 / 7; }
-  .tag { grid-area: 3 / 3 / 4 / 4; 
-    
-      font-family: 'poppins', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.05rem;
-      text-align: center;
-      font-style:normal;
-      text-transform: capitalize;
-      color: #FFFFFF;
-      background-color: #4A8B75;
-      border-radius: 0.5rem;
-      -webkit-border-radius: 0.5rem;
-      -moz-border-radius: 0.5rem;
-      padding: 10px;
-      border-style: none;
-      
-      
-      }
-  .tag2 { grid-area: 3 / 4 / 4 / 5; }
-  .vide { grid-area: 3 / 5 / 4 / 6; }
-  .voir_plus { 
-    grid-area: 3 / 6 / 4 / 7; 
-
-
+.image {
+  grid-area: 1 / 1 / 4 / 3;
+}
+img {
+  height: 250px;
+  width: auto;
+  padding-top: 20px;
+  margin-left: -50px;
 }
 
-  .plus{
-    text-decoration:underline;
-    border: none;
-    background:none;
-    font-weight: bold;
+#img2 {
+  height: 300px;
+  width: auto;
+  padding-top: 0px;
+  margin-left: -50px;
+  margin-bottom: 50px;
+}
+#img3 {
+  height: 350px;
+  width: auto;
+  padding-top: 0px;
+  margin-left: -50px;
+  margin-top: -15px;
+}
+.titre {
+  grid-area: 1 / 3 / 2 / 7;
+}
+.description {
+  grid-area: 2 / 3 / 3 / 7;
+}
+.tag {
+  grid-area: 3 / 3 / 4 / 4;
 
-  }
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #4a8b75;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  padding: 10px;
+  border-style: none;
+}
+.tag2 {
+  grid-area: 3 / 4 / 4 / 5;
+}
+.vide {
+  grid-area: 3 / 5 / 4 / 6;
+}
+.voir_plus {
+  grid-area: 3 / 6 / 4 / 7;
+}
 
-  .carte {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 7px;
-    }
-    
-    
- 
-      
-      .full_div_cards { grid-area: 1 / 1 / 9 / 4;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-column-gap: 300px;
-        grid-row-gap: 7px; 
-      background-color: #4A8B75;
-      margin: 20px;
-    }
-      .ligne1 { grid-area: 1 / 1 / 5 / 4; 
-      display: flex;
-        justify-content: space-between;
-        
-    }
-      .case1 { grid-area: 1 / 1 / 5 / 2; 
-      background-color: bisque;
-    width: 20%;
-    height: auto;
-     }
+.plus {
+  text-decoration: underline;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
 
-       .photo {
-      display: flex;
-     justify-content: center;
-     margin-left: 50px;
-     }
-        .titre{
-          font-size: 30px;
-          text-align: center;
-          margin-top: 10px;
-        }
+.carte {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 7px;
+}
 
-        .parfums {
-          font-size: 20px;
-          text-align: center;
-          margin-top: 10px;
-          text-decoration: underline;
-        }
+.full_div_cards {
+  grid-area: 1 / 1 / 9 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 300px;
+  grid-row-gap: 7px;
+  background-color: #4a8b75;
+  margin: 100px 20px 60px 20px;
+}
+.ligne1 {
+  grid-area: 1 / 1 / 5 / 4;
+  grid-column-gap: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.case1 {
+  grid-area: 1 / 1 / 5 / 2;
+  background-color: bisque;
+  width: 20%;
+  height: auto;
+}
 
-        .desc{
+.photo {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+.titre {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
 
-          font-size: 18px;
-          text-align: center;
-          margin-top: 10px;
-        }
+.parfums {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
 
-        .voir{
-          text-decoration:underline;
-          border: none;
-          background:none;
-          font-weight: bold;
-          float: right;
-        }
+.desc {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
 
-      .case2 { grid-area: 1 / 2 / 5 / 3; 
-      background-color: red;
-      width: 300px;
-     display: flex;
-     justify-content: center;  
-     /* height: 30px;
-  width: auto;} */}
+.voir {
+  text-decoration: underline;
+  border: none;
+  background: none;
+  font-weight: bold;
+  float: right;
+}
 
-      .case3 { grid-area: 1 / 2 / 5 / 3; 
-      background-color: dodgerblue;
-      width: 300px;
-     display: flex;
-     justify-content: center;
-  
+.case2 {
+  grid-area: 1 / 2 / 5 / 3;
+  background-color: red;
+  width: 20%;
+  height: auto;
+}
 
-      .ligne2 { grid-area: 5 / 1 / 9 / 4; }
+.case3 {
+  grid-area: 1 / 2 / 5 / 3;
+  background-color: dodgerblue;
+  width: 20%;
+  height: auto;
+}
+
+.ligne2 {
+  grid-area: 5 / 1 / 9 / 4;
+  grid-column-gap: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
