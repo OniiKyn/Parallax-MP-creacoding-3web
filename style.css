@@ -48,7 +48,7 @@ header {
   grid-column-gap: 300px;
  }
   .bienvenue { grid-area: 1 / 1 / 2 / 2; }
-  .img_bann { grid-area: 1 / 2 / 2 / 3; }
+  /* .img_bann { grid-area: 1 / 2 / 2 / 3; } */
 
   #photo_bann {
     width: 80%;
