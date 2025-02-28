@@ -1,3 +1,5 @@
+/* import SimpleParallax from "simple-parallax-js/vanilla"; */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,24 +7,66 @@
 
 nav {
   width: 100%;
-  background-color: orangered;
+  background-color: #85331E;
   height: 80px;
+  display: flex;
+  justify-content: center;
+}
+/* .parallax-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+grid-area: 1 / 1 / 3 / 3; 
+} */
+
+#logo{
+  width: 100px;
+  height: auto;
+  padding: 20px;
 }
 
 header {
   height: 400px;
-  background-color: aquamarine;
+  background-image:url(img/bg_bann.png)  ; 
+  background-repeat:round;
+  height: auto;
+
 }
-#animationtxt {
-  /*#=id*/
+
+
+#div_header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  
+  grid-row-gap: 0px;
+  }
+  
+  .full_div_bann { grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  justify-content: center;
+  grid-column-gap: 300px;
+ }
+  .bienvenue { grid-area: 1 / 1 / 2 / 2; }
+  .img_bann { grid-area: 1 / 2 / 2 / 3; }
+
+  #photo_bann {
+    width: 80%;
+    height: auto;
+  }
+  #bienvenue{
+    width: 150%;
+    height: auto;
+  }
+/* #animationtxt {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-row-gap: 10px;
-  margin-top: 60px;
   margin-bottom: 60px;
-}
-#div1 {
+ 
+} */
+/* #div1 {
   grid-area: 1 / 1 / 2 / 2;
   justify-self: end;
   color: blueviolet;
@@ -51,7 +95,7 @@ header {
   justify-self: end;
   color: blueviolet;
   font-size: 150px;
-}
+} */
 /*
 .d_g {
   color: blueviolet;
@@ -62,29 +106,34 @@ header {
   font-size: 150px;
 }
 */
-
-.titre {
+main{
+  background :#FFEEDC;
+  padding-bottom: 40px;;
+}
+.titre_C {
   width: 100%;
   border-radius: 10px;
   display: grid;
+  color: #ffffff;
+  
 }
 
 .cartouche {
-  background-color: brown;
+  background-color: #C8733A;
   font-size: 20px;
   width: auto;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   justify-self: center;
   margin-bottom: 140px;
+  margin-top: 80px;
 }
+
 .TitreCartouche{
   margin: 30px;
 }
 
-.titre h2 {
-  text-align: center;
-}
+
 /* .recette{
   border: solid 4px slateblue;
   border-radius: 6px;
@@ -94,8 +143,8 @@ header {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 75px);
   grid-column-gap: 20px;
-  grid-row-gap: 8px;
-  border: solid 4px seagreen;
+  grid-row-gap: 20px;
+  border: solid 4px #85331E;
   border-radius: 20px;
   margin: 4rem;
 }
@@ -126,9 +175,24 @@ img {
 }
 .titre {
   grid-area: 1 / 3 / 2 / 7;
+  color:  #85331E;
+}
+.titre_recette{
+  margin-top: 80px;
+  width: 500px;
+  text-align: left;
 }
 .description {
   grid-area: 2 / 3 / 3 / 7;
+
+  
+}
+.italique{
+  font-style: italic;
+  font-size: 20px;
+}
+.ingredient{
+font-size: 1.5em;
 }
 .tag {
   grid-area: 3 / 3 / 4 / 4;
@@ -156,13 +220,16 @@ img {
 }
 .voir_plus {
   grid-area: 3 / 6 / 4 / 7;
+  
 }
 
 .plus {
   text-decoration: underline;
   border: none;
   background: none;
-  font-weight: bold;
+  font-weight:bolder;
+  font-size: medium;
+  color: #85331E;
 }
 
 .carte {
@@ -180,8 +247,11 @@ img {
   grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 300px;
   grid-row-gap: 7px;
-  background-color: #4a8b75;
-  margin: 100px 20px 60px 20px;
+  background-image:url(img/bg_bann.png)  ; 
+  height: auto;
+  width: auto;
+ 
+  margin: 100px 20px 0px 20px;
 }
 .ligne1 {
   grid-area: 1 / 1 / 5 / 4;
@@ -193,19 +263,31 @@ img {
 .case1 {
   grid-area: 1 / 1 / 5 / 2;
   background-color: bisque;
+  border: solid #E47645;
+  border-radius: 40px;
   width: 20%;
+  height: 90% ;
+}
+
+.photo_2{
+  width: 100%;
   height: auto;
+  position: relative ;
+  bottom: 60px;
 }
 
 .photo {
   display: flex;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .titre {
   font-size: 30px;
   text-align: center;
-  margin-top: 10px;
+  position: relative ;
+  bottom: 60px;
+  color: #85331E;
+
 }
 
 .parfums {
@@ -213,12 +295,19 @@ img {
   text-align: center;
   margin-top: 10px;
   text-decoration: underline;
+  position: relative ;
+  bottom: 60px;
+  color: #85331E;
+
 }
 
 .desc {
   font-size: 18px;
   text-align: center;
   margin-top: 10px;
+  position: relative ;
+  bottom: 60px;
+  color: #85331E;
 }
 
 .voir {
@@ -226,21 +315,31 @@ img {
   border: none;
   background: none;
   font-weight: bold;
+  font-size: larger;
   float: right;
+  position: relative ;
+  bottom: 60px;
+  margin-right: 20px;
+  color: #85331E;
+  
 }
 
 .case2 {
   grid-area: 1 / 2 / 5 / 3;
-  background-color: red;
+  background-color: bisque;
+  border: solid #E47645;
+  border-radius: 40px;
   width: 20%;
-  height: auto;
+  height: 90% ;
 }
 
 .case3 {
   grid-area: 1 / 2 / 5 / 3;
-  background-color: dodgerblue;
+  background-color: bisque;
+  border: solid #E47645;
+  border-radius: 40px;
   width: 20%;
-  height: auto;
+  height: 90% ;
 }
 
 .ligne2 {
@@ -249,5 +348,51 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
+footer {
+  background-color: #C8733A;
+  padding-top: 20px;
+}
+
+#txt_footer{
+ 
+
+}
+h5{
+  color: aliceblue;
+  padding-left: 30px;
+  font-size: 2em;
+}
+#p_footer {
+  color: aliceblue;
+  padding-left: 30px;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.div_seasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-row-gap: 0px;
+  margin-top: 30px
+
+  ;
+  }
+  
+  .full_div { grid-area: 1 / 1 / 2 / 4;
+     display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    grid-column-gap: 200px;
+    margin-bottom: 20px;
+  }
+  .printemps { grid-area: 1 / 1 / 2 / 2;  }
+  .ete { grid-area: 1 / 2 / 2 / 3; }
+  .hiver { grid-area: 1 / 3 / 2 / 4; }
+  #credits{
+    margin-top: 30px;
+    color: aliceblue;
+    text-align: center;
+
+  }
